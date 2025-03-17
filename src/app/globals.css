@@ -52,3 +52,20 @@
   padding-left: 1.5rem; /* 24px */
   padding-right: 1.5rem; /* 24px */
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c084fc;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}

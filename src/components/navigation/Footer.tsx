@@ -15,11 +15,54 @@
  *   limitations under the License.
  */
 
-import React from 'react'
+import { Icon } from "@iconify/react/dist/iconify.js";
+import React from "react";
 
 export default function Footer() {
   return (
-    <div>Footer</div>
-    // TODO: continue
-  )
+    <footer className="w-full border-t bg-secondaryBlack text-main py-8">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+        <div className="text-center md:text-left">
+          <h2 className="text-xl font-semibold text-white">OopsApps</h2>
+          <p className="text-sm text-main mt-1">
+            Creating problems for solutions™
+          </p>
+        </div>
+
+        <div className="flex space-x-5 mt-6 md:mt-0">
+          <a
+            href="https://github.com/oopsapps"
+            target="_blank"
+            className="hover:text-white transition"
+          >
+            <Icon icon="line-md:github-twotone" className="h-5 w-5" />
+          </a>
+          <a
+            href="https://x.com/oopsappsdev"
+            target="_blank"
+            className="hover:text-white transition"
+          >
+            <Icon icon="line-md:twitter-x-alt" className="h-5 w-5" />
+          </a>
+          <a
+            href="mailto:support@oopsapps.tech"
+            className="hover:text-white transition"
+          >
+            <Icon icon="line-md:email-alt-twotone" className="h-5 w-5" />
+          </a>
+        </div>
+      </div>
+
+      <div className="mt-6 text-center text-sm text-main">
+        <p>
+          © {new Date().getFullYear()} OopsApps. Built with
+          <Icon
+            icon="line-md:heart-twotone-half-filled"
+            className="inline-block h-4 w-4 text-red-500"
+          />
+          by Laith.
+        </p>
+      </div>
+    </footer>
+  );
 }

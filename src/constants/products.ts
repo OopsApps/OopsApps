@@ -16,3 +16,28 @@
  */
 
 export const products = ["OopsNotes", "OopsShare", "OopsBudget", "OopsDo"];
+
+export const projects = [
+  {
+    name: "OopsBudgeter",
+    note: "The demo's passcode is 696969",
+    description:
+      "OopsBudgeter is a self-hosted, privacy-first budgeting app designed to keep your finances in check without all the unnecessary complexity. With a clean UI and powerful analytics, it helps you track expenses, analyze spending habits, and plan your financial future effortlessly.",
+    features: [
+      "🔥 Simple & fast budgeting without unnecessary complexity.",
+      "🔒 Self-hosted and secure, giving you full control over your data.",
+      "🤖 FakeAI-powered insights to analyze and predict spending trends.",
+      "🔄 Automated recurring transactions for income and bills.",
+      "📅 Expense heatmap to visualize your financial habits over time.",
+      "📂 Export your data as CSV or JSON for easy backups.",
+      "🎯 Gamification and streaks to keep you motivated to save.",
+      "🗃️ PostgreSQL support for scalable and reliable data storage.",
+      "🐳 Ready-to-use Docker deployment for instant setup.",
+    ],
+    links: {
+      github: "https://github.com/oopsapps/oopsbudgeter",
+      docker: "https://hub.docker.com/r/oopsapps/oopsbudgeter",
+      demo: "https://budget.oopsapps.tech",
+    },
+  },
+];

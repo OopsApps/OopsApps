@@ -1,4 +1,5 @@
 import SupportCard from "@/components/cards/SupportCard";
+import Showcase from "@/components/common/Showcase";
 import ImageCard from "@/components/ui/image-card";
 import Marquee from "@/components/ui/marquee";
 import { products } from "@/constants/products";
@@ -17,10 +18,26 @@ export default function Home() {
         <span className="mt-4 font-semibold text-lg text-secondary">
           And somehow, they work... mostly
         </span>
-        <div>
+        <div className="max-w-xs md:max-w-2xl">
           <Marquee items={products} />
         </div>
       </section>
+
+      <section
+        id="projects"
+        className="h-full flex flex-col gap-4 justify-center items-center border-b-2 border-border"
+      >
+        <h3 className="text-6xl mt-20 font-bold max-w-2xl text-center">
+          How You Can Support OopsApps
+        </h3>
+        <p className="max-w-2xl text-center text-gray-600">
+          We love making stuff but let’s be real, this whole thing runs on
+          copious amounts of caffeine, late-night debugging, and the occasional
+          existential crisis. Here’s how you can help us keep the chaos going:
+        </p>
+        <Showcase />
+      </section>
+
       <section
         id="about"
         className="h-full flex flex-col gap-4 justify-center items-center border-b-2 border-border"
@@ -57,6 +74,7 @@ export default function Home() {
           />
         </div>
       </section>
+
       <section
         id="tip"
         className="h-full flex flex-col gap-4 justify-center items-center"
@@ -82,8 +100,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      {/* TODO: add projects sections, showcasing the projects and ability to search */}
     </main>
   );
 }
