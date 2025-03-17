@@ -28,12 +28,14 @@ export default function Home() {
         className="h-full flex flex-col gap-4 justify-center items-center border-b-2 border-border"
       >
         <h3 className="text-6xl mt-20 font-bold max-w-2xl text-center">
-          How You Can Support OopsApps
+          Discover Our Oopses – Where Chaos Meets Innovation
         </h3>
         <p className="max-w-2xl text-center text-gray-600">
-          We love making stuff but let’s be real, this whole thing runs on
-          copious amounts of caffeine, late-night debugging, and the occasional
-          existential crisis. Here’s how you can help us keep the chaos going:
+          Step into the world of OopsApps, where every oops turns into something
+          unexpectedly brilliant and make life easier—sometimes in ways we
+          did not even plan. Explore our growing collection of apps and see how
+          we turn problems into solutions (or at least some fun along the way).
+          🚀✨
         </p>
         <Showcase />
       </section>
