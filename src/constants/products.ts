@@ -36,7 +36,7 @@ export const projects = [
     ],
     links: {
       github: "https://github.com/oopsapps/oopsbudgeter",
-      docker: "https://hub.docker.com/r/oopsapps/oopsbudgeter",
+      docker: "https://hub.docker.com/r/iconical/oopsbudgeter",
       demo: "https://budget.oopsapps.tech",
     },
   },
